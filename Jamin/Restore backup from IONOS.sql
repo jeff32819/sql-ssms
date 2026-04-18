@@ -1,6 +1,6 @@
 /********************************************************************
 
-X:\SqlServerBak\Dev14\063_quotesearchcontactqry__ 26-04-16__1423~[JEFF32819VM01~jsm14]~[Jamin].bak
+X:\SqlServerBak\Dev14\063_quotesearchcontactqry__ 26-04-18__1407~[JEFF32819VM01~jsm14]~[Jamin].bak
 
 ********************************************************************/
 
@@ -15,7 +15,7 @@ IF db_id('Jamin') IS NOT NULL
 	END
 GO
 restore database [Jamin]
-	from disk = 'X:\SqlServerBak\Dev14\063_quotesearchcontactqry__ 26-04-16__1423~[JEFF32819VM01~jsm14]~[Jamin].bak'
+	from disk = 'X:\SqlServerBak\Dev14\063_quotesearchcontactqry__ 26-04-18__1407~[JEFF32819VM01~jsm14]~[Jamin].bak'
 	with REPLACE,
 	move 'Jamin' to 'X:\SqlServerData\Dev14\Jamin_data.mdf',
 	move 'Jamin_log' to 'X:\SqlServerData\Dev14\Jamin_logs.ldf'
