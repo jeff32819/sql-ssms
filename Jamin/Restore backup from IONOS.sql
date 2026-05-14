@@ -1,5 +1,5 @@
 
--- Generated UTC : [2026-04-23 19:56:46] 
+-- Generated UTC : [2026-05-14 01:27:28] 
 -- Target Server : [PANAMACITY\DEV14]
 -- Database      : [Jamin]
 
@@ -75,5 +75,4 @@ BEGIN
     PRINT 'Restore successful.';
 END
 
-SET NOEXEC OFF;amin] SET MULTI_USER
-GO
+SET NOEXEC OFF;
