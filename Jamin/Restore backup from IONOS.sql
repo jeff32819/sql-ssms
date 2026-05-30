@@ -1,8 +1,7 @@
 
--- Generated UTC : [2026-05-16 01:45:24] 
+-- Generated UTC : [2026-05-30 19:03:28] 
 -- Target Server : [PANAMACITY\DEV14]
 -- Database      : [Jamin]
-
 
 USE [master];
 GO
@@ -21,7 +20,7 @@ DECLARE @LogsName NVARCHAR(128) = N'Jamin_log';
 -- Physical Paths
 DECLARE @DataFilePath NVARCHAR(500) = N'X:\SqlServerData\Dev14\Jamin_data.mdf';
 DECLARE @LogsFilePath NVARCHAR(500) = N'X:\SqlServerData\Dev14\Jamin_logs.ldf';
-DECLARE @BakFilePath  NVARCHAR(500) = N'X:\SqlServerBak\Dev14\064.globalvars_quotehoursminimum__ 26-05-15__2140~[JEFF32819VM01~jsm14]~[Jamin].bak';
+DECLARE @BakFilePath  NVARCHAR(500) = N'X:\SqlServerBak\Dev14\Jamin\064.globalvars_quotehoursminimum__ 26-05-15__2140~[JEFF32819VM01~jsm14]~[Jamin].bak';
 
 -- =============================================
 -- 2. SERVER SAFETY CHECK
@@ -59,12 +58,14 @@ SET @Sql = N'RESTORE DATABASE ' + QUOTENAME(@DbName) + N'
     MOVE ''' + @DataName + ''' TO ''' + @DataFilePath + ''',
     MOVE ''' + @LogsName + ''' TO ''' + @LogsFilePath + ''';';
 
-PRINT 'Executing Restore for ' + @DbName + '...';
 PRINT ''
 PRINT '--- SQL START --------------------------------'
+PRINT ''
 PRINT @Sql
+PRINT ''
 PRINT '--- SQL END --------------------------------'
 PRINT ''
+PRINT 'Executing Restore for ' + @DbName + '...';
 EXEC sp_executesql @Sql;
 
 -- Bring it back to Multi User
