@@ -1,5 +1,5 @@
 
--- Generated UTC : [2026-07-03 15:06:17] 
+-- Generated UTC : [2026-07-07 15:05:01] 
 -- Target Server : [PANAMACITY\DEV14]
 -- Database      : [Jamin]
 
@@ -20,7 +20,7 @@ DECLARE @LogsName NVARCHAR(128) = N'Jamin_log';
 -- Physical Paths
 DECLARE @DataFilePath NVARCHAR(500) = N'X:\SqlServerData\Dev14\Jamin_data.mdf';
 DECLARE @LogsFilePath NVARCHAR(500) = N'X:\SqlServerData\Dev14\Jamin_logs.ldf';
-DECLARE @BakFilePath  NVARCHAR(500) = N'X:\SqlServerBak\Dev14\JaminFromIONOS\086.quotetblrate2hrscustomhrmin2__ 26-07-03__1101~[JEFF32819VM01~jsm14]~[Jamin].bak';
+DECLARE @BakFilePath  NVARCHAR(500) = N'X:\SqlServerBak\Dev14\JaminFromIONOS\088.driverhoursofservicepdftbl__ 26-07-07__1101~[JEFF32819VM01~jsm14]~[Jamin].bak';
 
 -- =============================================
 -- 2. SERVER SAFETY CHECK
